@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,49 +7,53 @@
 	<title>Document</title>
 </head>
 <body>
-	<div class="sample">
-		<div class="imglayer1"></div>
-        <div class="layer1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4800 300" width="4800" height="300">
-                <defs>
-                    <path d="M 0,0 
-                            v 50,0 
+	<div class="topContainer">
+		<div class="layer1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4800 300">
+                    <path 
+                        d=" M 0,500 
+                            v -400,0 
                             q 400,-100 800,0 t 800,0
                             q 400,-100 800,0 t 800,0
                             q 400,-100 800,0 t 800,0
-                            v 4200,0 Z"id="wave" />
-                </defs>
-                <use xlink:href="#wave"/>
+                            v 400,0 Z"/>
             </svg>
         </div>
-        
-        <div class="imglayer2"></div>
-
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4800 300" width="4800" height="300">
-            <defs>
-                <clipPath id="midWave">
-                    <path d="M 0,0 
-                            v 70,0 
-                            q 400,-100 800,0 t 800,0
-                            q 400,-100 800,0 t 800,0
-                            q 400,-100 800,0 t 800,0
-                            v 4200,0 Z"id="wave" />
-                </clipPath>
-            </defs>
-            <use xlink:href="#wave"/>
-        </svg>
-
         <div class="layer2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4800 300" width="4800" height="300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="200 0 4800 300">
+                <path 
+                    d=" M 0,300 
+                        v -200,0 
+                        q 400,-200 800,0 t 800,0
+                        q 400,-200 800,0 t 800,0
+                        q 400,-200 800,0 t 800,0
+                        v 200,0 Z"/>
+            </svg>
+            <div>
+                <h2>治験とは？</h2>
+                <p>新しい薬が医薬品として認められるための<br>
+                    安全で安全な医療環境下で行われる<br>
+                    臨床試験のこと。</p>
+            </div>
+        </div>
+        <div class="layer3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4800 300">
                 <defs>
-                    <path d="M 0,0 
-                            v 50,0 
-                            q 400,100 800,0 t 800,0
-                            q 400,100 800,0 t 800,0
-                            q 400,100 800,0 t 800,0
-                            v 4200,0 Z"id="wave" />
+                    <clipPath id="midWave">
+                        <path d=" M 0,300 
+                        v -200,0 
+                        q 400,-100 800,0 t 800,0
+                        q 400,-100 800,0 t 800,0
+                        q 400,-100 800,0 t 800,0
+                        v 200,0 Z"/>
+                    </clipPath>
                 </defs>
-                <use xlink:href="#wave"/>
+                <path d=" M 0,400 
+                    v -200,0 
+                    q 200,-50 400,0 t 400,0
+                    q 200,-50 400,0 t 400,0
+                    q 200,-50 400,0 t 400,0
+                    v 200,0 Z"/>
             </svg>
         </div>
 	</div>
